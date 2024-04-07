@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Diary</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="Final79C.css">
+    <style>
+        /* Additional CSS styles for modern fonts and minimalist design */
+        body {
+            font-family: 'Candara', sans-serif;
+            background-color: #f9f9f9;
+        }
+        header h2, header h3 {
+                font-family: Candara, sans-serif; /* Use Candara font for header text */
+            }
+        header {
+            background-color: #7900a171;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff6f;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+            margin-bottom: 20px;
+        }
+        .text-l {
+            text-align: center;
+        }
+        .button {
+            background-color: #7900a1;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #5e007d;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h2>My Online Diary</h2>
+    <h3>Today is:</h3>
+    <h3 id="date"></h3>
+    <h4 id="clock"></h4>
+</header>
+<div class="wrapper">
+    <textarea id="txt" cols="30" rows="3" placeholder="How was your day, today? How are you feeling?"></textarea>
+    <div class="text-l">
+        <button class="button" onclick="getRs(); document.getElementById('txt').value=''">Create</button>
+        <button class="button button-print-or-save-document" id="Print">Print</button>
+        <button class="button" id="Clear">Clear</button>
+    </div>
+</div>
+<div id="rs" class="wrapper"></div>
+<audio id="audioContainer" autoplay controls>
+    <source src="AudioD.aac" type="audio/aac">
+    Your browser does not support the audio element.
+</audio>
+<script src="Final79C.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Use a modern font */
+}
+
+body {
+    background-image: url('BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+#audioContainer {
+    position: relative;
+    top: 50px; /* Adjust as needed */
+    left: 50%; /* Position it in the middle horizontally */
+    transform: translateX(-50%); /* Center it horizontally */
+    z-index: 9999;
+    opacity: 0.7; /* Set the opacity for semi-transparency */
+}
+
+#audioContainer audio {
+    width: 200px; /* Adjust the width as needed */
+}
+
+
+.wrapper {
+    max-width: 600px; /* Increase the width for better readability */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background for entries */
+    border: 1px solid #ccc; /* Border around entries */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 auto; /* Center the textarea horizontally */
+    display: block;  /* Disable textarea resizing */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#Print {
+    background-color: #007bff; /* Blue background for print button */
+    color: #fff; /* White text color */
+}
+
+button#Clear {
+    background-color: #dc3545; /* Red background for clear button */
+    color: #fff; /* White text color */
+}
+
+.card {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card small {
+    display: block; /* Make the timestamp appear on a new line */
+    color: #888; /* Lighter text color for timestamp */
+}
+
+.edit {
+    background-color: #ff07eead; /* Yellow background for edit and clear buttons */
+    color: #333; /* Dark text color */
+}
+
+.clear {
+    background-color: #0717ff83; /* Yellow background for edit and clear buttons */
+    color: #333; /* Dark text color */
+}
+
